@@ -21,7 +21,7 @@ async def add_bot(bot_token):
 
 async def startup_log_all_done():
     try:
-        await bot.send_message(TELE, f"**TeleBot has been deployed.\nSend** `{CMD_HNDLR}alive` **to see if the bot is working.\n\nAdd** @{BOTNAME} **to this group and make it admin for enabling all the features of TeleBot**")
+        await bot.send_message(TELE, f"**Devil Userbot has been deployed.\nSend** `{CMD_HNDLR}alive` **to see if the bot is working and abh nachoo bhencho.\n\nAdd** @{BOTNAME} **to this group and make it admin for enabling all the features of Devil Userbot**")
     except BaseException:
         print("Either PRIVATE_GROUP_ID is wrong or you have left the group.")
 
@@ -52,9 +52,9 @@ for name in files:
         shortname = path1.stem
         load_module(shortname.replace(".py", ""))
 
-print("TeleBot has been deployed! ")
+print("Devil Userbot has been deployed! ")
 
-print("Setting up TGBot")
+print("Setting up DevilBot")
 path = "telebot/plugins/mybot/*.py"
 files = glob.glob(path)
 for name in files:
@@ -73,8 +73,8 @@ if LOAD_MYBOT == "True":
             load_pmbot(shortname.replace(".py", ""))
     print("TGBot set up completely!")
 
-print("TGBot set up - Level - Basic")
-print("TeleBot has been fully deployed! Do Visit @TeleBotSupport")
+print("DevilBot set up - Level - Basic")
+print("Devil Userbot has been fully deployed! Do Visit @Deviluserbot")
 bot.loop.run_until_complete(startup_log_all_done())
 
 if len(argv) not in (1, 3, 4):
