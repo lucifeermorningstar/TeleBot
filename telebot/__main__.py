@@ -71,7 +71,7 @@ if LOAD_MYBOT == "True":
             path1 = Path(f.name)
             shortname = path1.stem
             load_pmbot(shortname.replace(".py", ""))
-    print("TGBot set up completely!")
+    print("DevilBot set up completely!")
 
 print("DevilBot set up - Level - Basic")
 print("Devil Userbot has been fully deployed! Do Visit @Deviluserbot")
